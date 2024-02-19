@@ -1,0 +1,131 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+
+}
+.portion1{
+    display: flex;
+    justify-content: space-between;
+    padding-block: 12px;
+    padding-inline: 24px;
+    align-items: center;
+}
+.p1-d1{
+    display: flex;
+    align-items: center;
+
+}
+.p1-d2{
+    margin-left: 12px;
+}
+.p1-d4{
+    display: flex;
+    gap: 20px;
+}
+.p1-d2 {
+    padding-block: 7px;
+    padding-inline: 30px;
+    color: #a89273;
+    background-color: white;
+    border: 2px solid #a89273;
+}
+.p1-d3{
+    font-size: 25px;
+}
+.p1-d4{
+    font-size: 16px;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container form {
+    display: flex;
+}
+
+.search-container input {
+    padding: 8px;
+    border: 2px solid #a892a4;
+    border-radius: 0px;
+}
+
+.search-container button {
+    padding: 8px;
+    background-color:   #505050;
+    color: white;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+.search-container button:hover {
+    background-color:  #505050;
+}
+@media only screen and (max-width: 1039px) {
+    .p1-d4{
+        display: none;
+    }
+    }
+.portion2{
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 6%;
+    font-weight: bolder;
+    margin-bottom: 12px;
+}
+.portion2 a{
+    text-decoration: none;
+    color: black;    
+}
+.portion3 img{
+    width: 100%;
+    height: 450px;
+    position: absolute;
+}
+.p3-d3 h1{
+    font-size: 26px;
+    margin-bottom: 24px;
+}
+.p3-d4 p{
+    font-size: 18px;
+    margin-bottom: 24px;
+    
+}
+.p3-d5 p{
+    font-size: 19px;
+    margin-bottom: 24px;
+}
+.p3-d6 a{
+    padding-block: 12px;
+    padding-inline: 15px;
+    background-color: brown;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    margin-right: 24px;
+}
+.p3-d7 a{
+    padding-block: 12px;
+    padding-inline: 15px;
+    background-color: brown;
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+.p3-d67{
+    display: flex;
+}
+.p3-d2{
+    margin-top: 100px;
+    position: relative;
+    padding-left: 50%;
+    padding-right: 3%;
+}
+.portion3{
+    display: flex;
+    justify-content: space-between;
+}
