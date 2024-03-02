@@ -1,131 +1,49 @@
-*{
-    padding: 0;
-    margin: 0;
-    font-family: sans-serif;
+/* App.css */
 
-}
-.portion1{
-    display: flex;
-    justify-content: space-between;
-    padding-block: 12px;
-    padding-inline: 24px;
-    align-items: center;
-}
-.p1-d1{
-    display: flex;
-    align-items: center;
 
-}
-.p1-d2{
-    margin-left: 12px;
-}
-.p1-d4{
-    display: flex;
-    gap: 20px;
-}
-.p1-d2 {
-    padding-block: 7px;
-    padding-inline: 30px;
-    color: #a89273;
-    background-color: white;
-    border: 2px solid #a89273;
-}
-.p1-d3{
-    font-size: 25px;
-}
-.p1-d4{
-    font-size: 16px;
-}
-.search-container {
-    display: flex;
-    align-items: center;
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
 }
 
-.search-container form {
-    display: flex;
+.app-container {
+  max-width: 800px;
+  padding: 4rem;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
-.search-container input {
-    padding: 8px;
-    border: 2px solid #a892a4;
-    border-radius: 0px;
+h1 {
+  color: #333;
 }
 
-.search-container button {
-    padding: 8px;
-    background-color:   #505050;
-    color: white;
-    border: none;
-    border-radius: 0px;
-    cursor: pointer;
+.counter-container {
+  margin-top: 2rem;
 }
 
-.search-container button:hover {
-    background-color:  #505050;
+h2 {
+  color: #555;
 }
-@media only screen and (max-width: 1039px) {
-    .p1-d4{
-        display: none;
-    }
-    }
-.portion2{
-    margin-top: 24px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-inline: 6%;
-    font-weight: bolder;
-    margin-bottom: 12px;
+
+button {
+  background-color: #61dafb;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin: 0.5rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
 }
-.portion2 a{
-    text-decoration: none;
-    color: black;    
-}
-.portion3 img{
-    width: 100%;
-    height: 450px;
-    position: absolute;
-}
-.p3-d3 h1{
-    font-size: 26px;
-    margin-bottom: 24px;
-}
-.p3-d4 p{
-    font-size: 18px;
-    margin-bottom: 24px;
-    
-}
-.p3-d5 p{
-    font-size: 19px;
-    margin-bottom: 24px;
-}
-.p3-d6 a{
-    padding-block: 12px;
-    padding-inline: 15px;
-    background-color: brown;
-    text-decoration: none;
-    color: white;
-    font-weight: bolder;
-    margin-right: 24px;
-}
-.p3-d7 a{
-    padding-block: 12px;
-    padding-inline: 15px;
-    background-color: brown;
-    text-decoration: none;
-    color: white;
-    font-weight: bolder;
-}
-.p3-d67{
-    display: flex;
-}
-.p3-d2{
-    margin-top: 100px;
-    position: relative;
-    padding-left: 50%;
-    padding-right: 3%;
-}
-.portion3{
-    display: flex;
-    justify-content: space-between;
+
+button:hover {
+  background-color: #4fa3d1;
 }
