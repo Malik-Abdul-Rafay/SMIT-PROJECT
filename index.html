@@ -1,53 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SMIT Project</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-</head>
-<body>
-    <div class="portion1">
-        <div class="p1-d1">
-            <div class="search-container">
-                <form>
-                  <input type="text" placeholder="Search.." name="search">
-                  <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
-              </div>
-            <div class="p1-d2">Upload Own</div>
-        </div>
-        <div class="p1-d3">EVENTKINGDOM</div>
-        <div class="p1-d4">
-            <div class="p1-d5">HOW TO</div>
-            <div class="p1-d6">FAQ</div>
-            <div class="p1-d7">PRICING</div>
-            <div class="p1-d8">LOGIN</div>
-            <div class="p1-d9">SIGN UP</div>
-        </div>
+// App.js
+
+import React, { useState } from 'react';
+import './App.css';
+
+function App() {
+  const [counter, setCounter] = useState(15);
+
+  const addValue = () => {
+    setCounter(counter + 1);
+  };
+
+  const removeValue = () => {
+    if (counter > 0) {
+      setCounter(counter - 1);
+    }
+  };
+
+  return (
+    <div className="app-container">
+      <h1>Chai aur React</h1>
+      <div className="counter-container">
+        <h2>Counter Value: {counter}</h2>
+        <button onClick={addValue}>Add Value</button>
+        <button onClick={removeValue}>Remove Value</button>
+      </div>
     </div>
-    <div class="portion2">
-        <div class="p2-d1"><a href="">Corporate</a></div>
-        <div class="p2-d2"><a href="">Online Invitation</a></div>
-        <div class="p2-d3"><a href="">Online Cards</a></div>
-        <div class="p2-d4"><a href="">Paper Cards</a></div>
-        <div class="p2-d5"><a href="">Birthday/Anniversaries</a></div>
-        <div class="p2-d6"><a href="">Weddings</a></div>
-        <div class="p2-d7"><a href="">Holiday</a></div>
-        <div class="p2-d8"><a href="">Designers</a></div>
-    </div>
-    <div class="portion3">
-        <div class="p3-d1"><img src="./1.PNG" alt=""></div>
-        <div class="p3-d2">
-            <div class="p3-d3"><h1>VIRTUAL POST FOR EVENT PLANNING & INNOVATIVE MARKETING</h1></div>
-            <div class="p3-d4"><p>Impress with beautiful, personal, animated & entertaining communication</p></div>
-            <div class="p3-d5"><p>CLICK HIER & ENJOY THE BERLINER PHILHARMONIKER DIGITAL CONCERT HALL SEASON PREVIEW</p></div>
-            <div class="p3-d67">
-                <div class="p3-d6"><a href="">SEND TEST CARD</a></div>
-                <div class="p3-d7"><a href="">FIND OUT MORE</a></div>
-            </div>
-        </div>
-    </div>
-</body>
-</html>
+  );
+}
+
+export default App;
